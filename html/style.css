@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+  font-family: "Hiragno Kaku  Gothic ProN", "メイリオ", "sans-serif";
+  margin: 0;
+  padding: 0;
+}
+ h1{
+   color: gold;
+ }
+ p{
+   color: blue;
+ }
+ body{
+   background-color: #eee;
+ }
+ header{
+   background-color: white;
+ }
+ #contents{
+   background-color: yellow;
+ }
+ footer{
+   background-color: #1d1d1d;
+   color: white;
+   text-align: center;
+ }
+ footer p{
+   color: #fff;
+ }
+ header, #contents, footer{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+ }
