@@ -5,9 +5,6 @@
   margin: 0;
   padding: 0;
 }
- h1{
-   color: gold;
- }
 
  body{
    background-color: #eee;
@@ -19,6 +16,7 @@
  header h1{
    width: 1024px;
    margin: 0 auto;
+   color: gold;
  }
  #contents{
    width: 1024px;
@@ -29,17 +27,22 @@
    box-shadow:  1px 1px 3px gray;
    border-radius: 5px;
    font-family: 'Indie Flower', cursive;
+   overflow: hidden;
  }
- .first{
-   background-color: red;
- }
- .second{
-   background-color: blue;
+
+ #contents article figure{
+   float: left;
+   width: 30%;
  }
 
  #contents article h2{
    border-bottom: 1px solid black;
    margin-bottom: 24px;
+
+ }
+ #contents article .explain{
+   width: 70%;
+   float: left;
  }
  footer{
    background-color: #1d1d1d;
