@@ -6,6 +6,23 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color: #1d1d1d;
+}
+/*a:hover{
+  text-decoration: underline;
+  color: yellow;
+}
+a:visited{
+  color: green;
+}
+a:active{
+  color:red;
+}
+a:focus{
+  color:purple;
+}*/
 
  body{
    background-color: #eee;
@@ -47,6 +64,19 @@
    width: 60%;
    float: left;
    margin-left: 12px;
+ }
+ #contents .row{
+  overflow: hidden;
+ }
+ #contents .row article{
+  float: left;
+  width: 45%;
+ }
+ #contents .row article h2{
+  height: 1.5em;
+ }
+ #contents .row a:hover article{
+  background-color: #bbb109;
  }
  footer{
    background-color: #1d1d1d;
