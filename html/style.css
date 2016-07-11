@@ -31,6 +31,50 @@ a:focus{
    background-color: white;
    box-shadow: 0 1px 3px gray;
  }
+ header nav{
+  height: 50px;
+  background-color: #1d1d1d;
+  color: #fff;
+  padding-top: 8px;
+  box-sizing: border-box;
+ }
+ header nav a{
+  color: #fff;
+ }
+ header nav ul{
+  float: right;
+  margin-top: 8px;
+  font-size: 0;
+ }
+ header nav ul li{
+  font-size: 16px;
+  padding: 0 6px;
+  display: inline;
+  border-right: 1px solid #eee;
+ }
+ header nav ul li a:hover{
+  text-decoration: underline;
+  color: gold;
+ }
+ header nav ul li:first-child{
+  border-left: 1px solid #eee;
+ }
+ header nav h1{
+  color: #fff;
+  width: 50%;
+  float: left;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック"; 
+  font-weight:900;
+ }
+  
+ .inner{
+  width: 1024px;
+  margin: 0 auto;
+ }
+
+ header #top{
+  min-height: 300px;
+ }
  header h1{
    width: 1024px;
    margin: 0 auto;
@@ -90,7 +134,6 @@ a:focus{
    color: #fff;
  }
 #contents, footer{
-
     padding: 24px;
     box-sizing: border-box;
  }
