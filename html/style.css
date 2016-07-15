@@ -31,35 +31,35 @@ a:focus{
    background-color: white;
    box-shadow: 0 1px 3px gray;
  }
- header nav{
+nav{
   height: 50px;
   background-color: #1d1d1d;
   color: #fff;
   padding-top: 8px;
   box-sizing: border-box;
  }
- header nav a{
+nav a{
   color: #fff;
  }
- header nav ul{
+nav ul{
   float: right;
   margin-top: 8px;
   font-size: 0;
  }
- header nav ul li{
+ nav ul li{
   font-size: 16px;
   padding: 0 6px;
   display: inline;
   border-right: 1px solid #eee;
  }
- header nav ul li a:hover{
+nav ul li a:hover{
   text-decoration: underline;
   color: gold;
  }
- header nav ul li:first-child{
+nav ul li:first-child{
   border-left: 1px solid #eee;
  }
- header nav h1{
+nav h1{
   color: #fff;
   width: 50%;
   float: left;
@@ -121,6 +121,99 @@ a:focus{
  }
  #contents .row a:hover article{
   background-color: #bbb109;
+ }
+ button{
+  font-size: 24px;
+  padding: 3px 0;
+  border-radius: 5px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+background: rgb(254,252,234); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+ }
+ #contents form label{
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+ }
+ #contents form div{
+  margin-bottom: 12px;
+ }
+ #contents form input{
+  padding:5px;
+  font-size: 14px;
+ }
+ #contents form textarea{
+  font-size: 14pt;
+  width: 600px;
+ }
+ #contents form .label{
+  font-size: 20pt;
+  margin:0 12px;
+ }
+ #contents form input[type=radio], 
+#contents form input[type=checkbox]
+ {
+  transform-origin: right bottom;
+  transform: scale(1.5,1.5);
+  vertical-align: middle;
+ }
+ #contents form .radio-group{
+  margin-left: 20px;
+  display: inline;
+ }
+ #contents form select{
+  font-size: 14pt;
+  border:1px;
+ }
+ #contents form .form-actions{
+  text-align: center;
+ }
+ #contents form input[type=submit]{
+  font-size: 20pt;
+  padding: 6px 48px;
+  border:1px;
+  border-radius: 5px;
+  color:white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+97 */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 97%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 97%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 97%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#828c95',GradientType=1 ); /* IE6-9 */
+ }
+ #contents form input[type=submit]:hover{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefcea+0,f1da36+100;Gold+3D */
+background: rgb(254,252,234); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(254,252,234,1) 0%, rgba(241,218,54,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(254,252,234,1) 0%,rgba(241,218,54,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=1 ); /* IE6-9 */
+cursor: pointer;
+ }
+ table#interview{
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 300px;
+ }
+ table#interview .school,
+ table#interview .name,
+ table#interview .position{
+   width: 20%;
+ }
+ table#interview .voice{
+  width: 40%;
+ }
+ table#interview thead tr th,
+ table#interview tbody tr td{
+      border:1px solid white;
+      padding:14px;
+
+ }
+ table#interview thead tr th {
+      background-color: #e4e4e4;
  }
  footer{
    background-color: #1d1d1d;
