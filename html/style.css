@@ -95,7 +95,6 @@ nav h1{
 
  #contents article figure{
    float: left;
-   width: 30%;
    text-align: center;
  }
 
@@ -221,6 +220,7 @@ cursor: pointer;
    text-align: center;
  }
  header, footer{
+  clear: both;
    width:100%;
  }
  footer p{
@@ -242,3 +242,78 @@ cursor: pointer;
    color:gold;
    text-shadow: 1px 3px 3px white;
  }
+ #contents #main{
+  width: 60%;
+  float: left;
+ }
+ #contents #sidebar{
+  width: 30%;
+  float: left;
+ }
+ #contents .shashin{
+  display: block;
+ }
+#leader #main article figure{
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+#leader #main article .explain{
+  float: none;
+  width: 100%;
+}
+#contents #sidebar{
+  margin-left: 5%;
+}
+#contents #sidebar .widget ul{
+  margin:24px 0 0 24px;
+  list-style: none;
+}
+#contents #sidebar .widget ul li a:hover{
+  color: green;
+  text-decoration: underline;
+}
+#contents #sidebar .widget{
+  margin-bottom: 24px;
+}
+#contents #sidebar .widget h3{
+ 
+  position:relative;
+  margin:0 22px 0 10px;
+  padding:14px 15px 0px 20px;
+  font:"Hiragno Kaku Gothic ProN" 24px/1.3 sans-serif;
+  color:#009;
+  background:#ffc;
+  box-shadow:
+    12px 0 0 0 #ffc,
+    0 12px 0 0 #ffc,
+    1px 15px 4px -3px rgba(0,0,0,0.2);
+}
+#contents #sidebar .widget h3:before{
+  content:" ";
+  position:absolute;
+  top:100%;
+  left:100%;
+  width:0;
+  height:0;
+  border-width:12px 12px 0 0;
+  border-style:solid;
+  border-color:transparent;
+  border-top-color:#cc9;
+}
+#contents #sidebar .widget h3:after{
+  content:" ";
+  position:absolute;
+  padding:0 20px;
+  bottom:0;
+  left:10px;
+  width:120px;
+  height:20px;
+  background:rgba(255,182,182,0.4);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+}
+
+
