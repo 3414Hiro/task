@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>演算子</title>
+</head>
+<body>
+	<script>
+		var num;
+
+		num = 3 + 3;
+		document.write('<p>3 + 3 = ' + num + '</p>');
+		num = 5 - 3;
+		document.write('<p>5 - 3 = ' + num + '</p>');
+		num = 2 * 3;
+		document.write('<p>2 * 3 = ' + num + '</P>');
+		num = 9 / 3;
+		document.write('<p>9 / 3 = ' + num + '</p>');
+		num = 9 % 5;
+		document.write('<p>9 % 5 = ' + num + '</p>');
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>チャレンジ課題for</title>
+</head>
+<body>
+	<script>
+		var sum = 0;
+		for (var i = 3 ; i <= 100; i += 3) {
+			sum += i;
+		}
+		document.write('<p>合計は' + sum + 'です</p>');
+	</script>
+
+	<script>
+		var num = 0;
+		for (var i = 0 ; i <= 100 && i % 3 == 0; i ++) {
+			sum = sum + i;
+		}
+		document.write(sum);
+	</script>
+	<script>
+		var lum = 0;
+		for(var i = 0 ; i <= 100 ; i ++){
+			if(i % 3 == 0){
+				lum += i
+			}
+			}
+			document.write(lum);
+	</script>
+	
+</body>
+</html>

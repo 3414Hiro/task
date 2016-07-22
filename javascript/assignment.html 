@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>代入演算子</title>
+</head>
+<body>
+	<script>
+		var num = 10;
+		document.write('<p>num :' + num + '</p>');
+		num +=5;
+		document.write('<p>num +=5 :' + num +'</p>');
+
+		var num = 123;
+		var str = '123';
+
+		document.write('<p>' + (num == str) + '</p>');
+		document.write('<p>' + (num ===str) + '</p>');
+	</script>
+</body>
+</html>

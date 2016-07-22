@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>連想配列</title>
+	</head>
+	<body>
+		<script>
+			var apple = {'color':'red', 'price':100, 'gram':150};
+
+			document.write(apple['color']);
+			document.write(apple['price']);
+			document.write(apple['gram']);
+
+			document.write(apple.color);
+			document.write(apple.price);
+			document.write(apple.gram);
+
+			for(var o in apple){
+				document.write(apple[o]);
+			}
+		</script>
+	</body>
+	</html>	
