@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>チャレンジ課題function</title>
+</head>
+<body>
+	<script>
+		var price = 100;
+		price = price * 1.08;
+
+		document.write('<p>税込価格は' + price +  'です </p>');
+
+		function including_tax(){
+			document.write('<p>税込価格は' + price +  'です </p>')
+		}
+		including_tax();
+	</script>
+
+	<script>
+		var plice = 4;
+		function ncluding_tax(){
+			var plice = 1000;
+			plice = plice * 2;
+			document.write(plice);
+		}
+		document.write('<p>' + plice + '</p>');
+		ncluding_tax();
+	</script>
+</body>
+</html>

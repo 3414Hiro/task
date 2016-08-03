@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>くりかえし〜</title>
+	<script>
+		function count_time(){
+			var timer = document.getElementById('timer');
+			var date = new Date();
+			timer.innerHTML = date.toLocaleString();
+		}
+		var timerId; 
+		window.onload = function(){
+			timerId = setInterval(count_time, 1000);
+			document.getElementById('stop').addEventListener('click', function(){
+				var label = this.innerHTML;
+				if (label == "stop"){
+					clearInterval(timerId);
+					this.innerHTML = "go"
+				} else{
+					timerId = setInterval(count_time, 1000);
+					this.innerHTML ="stop";
+				}
+				
+			})
+		}
+	</script>
+</head>
+<body>
+	 <div id="timer"></div>
+	 <button id="stop">stop</button>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>イベント</title>
+</head>
+<body>
+	<button id="alert">アラート</button>
+	<script>
+		function event_alert(){
+			alert('Hello');
+		}
+		var button = document.getElementById('alert');
+		button.addEventListener("mouseover", event_alert, false);
+	</script>
+</body>
+</html>

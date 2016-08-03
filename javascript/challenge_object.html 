@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>チャレンジ課題オブジェクト</title>
+</head>
+<body>
+	<script>
+		var fruits = new Array();
+  
+        fruits[0] = 'apple';
+        fruits[1] = 'grape';
+        fruits[2] = 'melon';
+
+		fruits.push('orange');
+
+		for (var i = 0 ; i < fruits.length; i++) {
+			document.write(fruits[i]);
+		}
+	</script>
+</body>
+</html>

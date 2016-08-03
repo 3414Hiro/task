@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>タイマー</title>
+	<style>
+		#display{
+			width: 300px;
+			height: 100px;
+			border-radius: 5px;
+			border:2px solid black;
+			text-align: center;
+			background-color: white;
+			font-size: 36px;
+			line-height: 3em;
+		}
+	</style>
+</head>
+<body>
+	<div id="display"></div>
+	<button type="button" id="start">スタート</button>
+	<button type="button" id="stop">ストップ</button>
+	<button type="button" id="reset">リセット</button>
+
+	<script src="js/jquery-3.1.0.js"></script>
+	<script>
+		$(function(){
+			var initialtime = 5;
+			var interval = 1000;
+			var timerId;
+
+			var formatTime = function(sec){
+				var m, s ;
+				if (sec >= 60){
+					m = Math.round(sec/60);
+					s = sec % 60 ;
+				}else{
+					m = 0;
+					s = sec;
+				}
+				return m + ":" + s;
+
+			}
+
+			$('#display').text(formatTime(initialtime));
+
+			$('#start').click(function(){
+
+				 timerId = setInterval(function(){
+					var text = $('#display').text();
+				if (text - 1 == 0){
+					$('#display').text('TIME UP').css({color:'red'});
+					clearInterval(timerId);
+				}else{
+					$('#display').text(formatTime(text - 1));
+				}	
+				}, interval);
+			});
+
+			$('#stop').click(function(){
+				clearInterval(timerId);
+			});
+
+			$('#reset').click(function(){
+				clearInterval(timerId);
+				$('#display').text(formatTime(initialtime)).removeAttr("style");
+			});
+
+			
+			
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>dom繰り返し</title>
+		<script>
+			function count_time(){
+				var timer = document.getElementById('timer');
+				var date = new Date();
+				timer.innerHTML = date.tolocaleString();
+			}
+
+			window.onload = function(){
+				setInterval(count_time, 1000);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="timer"></div>
+	</body>
+	</html>	

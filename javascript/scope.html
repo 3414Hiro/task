@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>グローバル変数</title>
+</head>
+<body>
+	<script>
+		var str = 'global';
+
+		 function test_scope() {
+		 	document.write(str);
+		 }
+
+		 test_scope();
+	</script>
+
+	<script>
+		function test_scope(){
+			var str = 'local';
+		}
+		test_scope();
+		document.write(str);
+	</script>
+</body>
+</html>

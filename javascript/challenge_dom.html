@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>チャレンジ課題dom</title>
+</head>
+<body>
+	<div id="large" style="background-color:black">
+        <div id="box1">1行目(赤文字)</div>
+        <div id="box2">2行目(白文字)</div>
+    </div>
+    <script>
+        var box1 = document.getElementById('box1');
+        var box2 = document.getElementById('box2');
+        box1.innerHTML = '文字色は赤、文字サイズは24p';
+        box2.innerHTML = '文字色は白、文字サイズはデフォルト';
+        box1.style.color = 'red';
+        box2.style.color = 'white';
+        box1.style.fontSize = '24px';
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax</title>
+</head>
+<body>
+
+	<script src="js/jquery-3.1.0.js"></script>
+	<script>
+		function get_text(){
+			$.ajax({
+				url: 'http://codecamp.lesson.codecamp.jp/javascript/ajax.txt',
+				//非同期通信をするのはasync
+				async: true,
+				//コールバック
+				success: function(data){
+					document.write(data);
+				}
+			});
+		}
+
+		$(document).ready(function(){
+			setInterval(get_text, 2000);
+		});
+	</script>
+</body>
+</body>
+</html>

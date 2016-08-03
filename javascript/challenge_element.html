@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>チャレンジ課題繰り返し実行</title>
+	<script>
+		
+	</script>
+</head>
+<body>
+	<form action="" method="get">
+		<label for="name">リンク名：</label>
+		<input type="text" id="name" name="name" size="20">
+		<label for="url">URL：</label>
+		<input type="text" id="url" name="url" size="30">
+		<button type="button" id="add">リンク追加</button>
+	</form>
+	<div id="box"></div>
+
+<script>
+    document.getElementById('add').addEventListener('click', function(){
+
+
+	var name = document.getElementById('name').value;
+	var url = document.getElementById('url').value;
+
+	if (name && url){
+		var a = document.createElement('a');
+		a.innerHTML = name;
+		//setAttributeでaにhrefを追加している
+		a.setAttribute('href', url);
+		document.getElementById('box').appendChild(a);
+	}
+});
+</script>
+</body>
+</html>

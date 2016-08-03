@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM</title>
+</head>
+<body>
+	<div>ボックス0</div>
+    <div id="box1">ボックス1</div>
+    <div id="box2">ボックス2</div>
+    <div id="box3">ボックス3</div>
+	<script>
+		 var box1 =document.getElementById('box1');
+
+		 var box2 =document.getElementById('box2');
+	
+		 var box3 =document.getElementById('box3');
+		box1.innerHTML='文字列を入れ替え';
+		box2.innerHTML='<a href="http://codecamp.jp/">CodeCamp</a>';
+		box3.style.color = '#ff0000';
+	</script>
+</body>
+</html>
