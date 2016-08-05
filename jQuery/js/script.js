@@ -1,7 +1,7 @@
 $(function(){
 	var stack = [];
 	var cleared = false;
-	var lastPushedbutton
+	var lastPushedbutton;
 	var getLastStackValue = function(){
 		return stack[stack.length - 1];
 	}
@@ -15,7 +15,7 @@ $(function(){
 	
 
 	$('.number').on('click', function(){
-		var lastStackValue = stack[stack.length - 1]
+		var lastStackValue = stack[stack.length - 1];
 		if( isOperator(getLastStackValue()) ){
 			if(!cleared){
 				$('#result').text('');
